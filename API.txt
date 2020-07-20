@@ -1,0 +1,22 @@
+
+
+public List<String> postMessage(String content, String username) - sending message to wall with for particular user 
+e.g POST localhost:8081/postMessage?content=m1&username=Kamil 
+
+public String works() - simple healthcheck 
+GET localhost:8081/works
+
+public List<Message> getWallContent() - get content for all sent messages
+GET localhost:8081/getWallContent
+
+public List<User> getUserList() - get table of all users 
+GET localhost:8081/getUserList
+
+public void follow(String user, String followedUser) - following user operation 
+localhost:8081/follow?user=Kamil2&followedUser=Kamil 
+
+public List<String> getFollowedUsers(String username) 
+GET localhost:8081/getFollowedUsers
+
+public List<Message> getTimeline(String username) - list of the messages posted by all the people they follow, in reverse chronological order
+GET localhost:8081/getTimeline
